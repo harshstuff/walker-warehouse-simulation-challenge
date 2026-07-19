@@ -1,0 +1,10 @@
+{
+  "name": "close-race",
+  "description": "Lab and Precinct start equidistant from a cluster of resources, with one walker patrolling the middle.",
+  "gridSize": 8,
+  "seed": 11,
+  "walkers": [{ "x": 4, "y": 4 }],
+  "labSurvivors": [{ "x": 0, "y": 0 }, { "x": 0, "y": 1 }],
+  "precinctSurvivors": [{ "x": 7, "y": 7 }, { "x": 7, "y": 6 }],
+  "resources": [{ "x": 3, "y": 4 }, { "x": 4, "y": 3 }, { "x": 5, "y": 4 }]
+}

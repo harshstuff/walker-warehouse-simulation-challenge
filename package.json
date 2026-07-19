@@ -1,0 +1,24 @@
+{
+  "name": "walker-warehouse-sim",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A 'what if?' grid simulation: Lab vs Precinct survivors race for resources in a walker-infested warehouse.",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/cli.js",
+    "simulate": "tsx src/cli.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "walker-heavy",
+  "description": "A cluster of walkers holds the centre while Lab and Precinct push in from opposite corners for scattered resources.",
+  "gridSize": 8,
+  "seed": 7,
+  "walkers": [
+    { "x": 3, "y": 3 },
+    { "x": 4, "y": 4 },
+    { "x": 3, "y": 4 },
+    { "x": 4, "y": 3 }
+  ],
+  "labSurvivors": [
+    { "x": 0, "y": 0 },
+    { "x": 1, "y": 0 }
+  ],
+  "precinctSurvivors": [
+    { "x": 7, "y": 7 },
+    { "x": 6, "y": 7 }
+  ],
+  "resources": [
+    { "x": 3, "y": 5 },
+    { "x": 5, "y": 3 },
+    { "x": 0, "y": 7 },
+    { "x": 7, "y": 0 }
+  ]
+}
