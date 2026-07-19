@@ -4,11 +4,6 @@ A running record of the decisions behind the simulation and *why* each was made.
 the living source of truth — it's updated as decisions are made or changed. The polished
 narrative for the submission lives in [DESIGN.md](DESIGN.md).
 
-**Status key:** `LOCKED` = chosen and settled · `PROPOSED` = recommended, pending
-confirmation · `SUPERSEDED` = replaced (kept for history).
-
-_Last updated: 2026-07-18._
-
 ## Toolchain and architecture
 
 | Decision | Status | Rationale |

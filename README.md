@@ -51,7 +51,9 @@ npm run simulate -- scenarios/close-race.json   # run from source (tsx)
 
 # or, after building:
 npm run build
-npm start scenarios/close-race.json
+npm start scenarios/close-race.json 
+
+# You can always tweak a scenario by changing numbers in an existing file, or create a new one (as long as it matches the format)
 ```
 
 The program validates the scenario (reporting all problems at once and exiting non-zero if
@@ -120,7 +122,7 @@ src/
   engine/              Pure simulation — state, movement, interactions, turn, endings, run loop
   cli.ts               Entry point — validate → simulate → report
 scenarios/             Example scenario inputs (close-race, walker-heavy)
-tests/                 Vitest suites — domain, validation, engine, smoke
+tests/                 Vitest suites — domain, validation, engine
 docs/
   DESIGN.md            Design walkthrough (assumptions, trade-offs)
   DECISIONS.md         Decision log with rationale

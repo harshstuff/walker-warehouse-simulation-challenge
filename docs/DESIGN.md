@@ -6,11 +6,6 @@ This document covers the three things the brief asks for:
 2. One thing I'd improve with more time.
 3. One thing I'm most proud of.
 
-Sections 2 and 3 are intentionally left for me to complete in my own words after the
-build settles. Section 1 is the live record of the decisions made so far; the full
-running log with per-decision rationale and status lives in
-[DECISIONS.md](DECISIONS.md).
-
 ---
 
 ## 1. Key assumptions and decisions
@@ -115,14 +110,18 @@ the two things that informed each choice were **(a) reproducibility/testability*
 
 ## 2. What I'd improve with more time
 
-_[To be completed by Harsh — the v2 backlog is a ready-made list: danger-aware A\*
-pathfinding (survivors route around walkers instead of beelining), reanimation of the dead,
-a non-lethal rival scuffle, and walkers guarding resources. Leading candidate: danger-aware
-pathfinding, since it expresses the Lab/Precinct asymmetry through behaviour, not just
-combat odds.]_
+With more time, I'd make the survivors smarter about danger. Right now they just walk straight at the nearest resource, even if a walker is standing in the way. 
+That was on purpose for version 1 — simple movement is easy to follow and easy to test. But it means a Lab researcher, who only wins 40% of fights, 
+keeps walking into fights they should avoid. I'd change the movement so cells near walkers count as "expensive," and each group avoids them
+based on how likely they are to lose.  Also a bit more complex, but to make it more thematic, I would want to add reanimation — a survivor killed by a walker
+turns into one on the next turn — adding more drama and escalating pressure to each run.
 
 ---
 
 ## 3. What I'm most proud of
 
-_[To be completed by Harsh.]_
+I'm most proud that the simulation feels alive but stays repeatable. I leaned on the story when I made my choices — the Precinct fight like trained officers,
+the Lab like desperate researchers (with a hint of adrenaline after the fire that wiped out their supplies), and the fights and deaths read like real Walking Dead moments, not dry numbers. 
+So each "what if" plays out differently and feels original. But underneath, it's fully controlled: the same setup with the same seed gives the exact same game every time. 
+I used a seeded random generator instead of plain random, so if a run throws up a surprising, dramatic story, I can replay it exactly instead of losing it. It feels 
+unpredictable, yet I can always reproduce it.
